@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Clicker Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="redraw()">
+    <div class="wrapper">
+        <h1 id="clickCount">0</h1>
+        <button onclick='clickIt()'>Click Me!</button>
+        <div class="upgrades-wrapper">
+            <ul>
+                <li>
+                    <h3 id="autoClick" style="visibility: hidden;">Default</h3>
+                    <button onclick="autoClickUp()" id="autoBtn">Auto Click (cost 5)</button>
+                </li>
+                <li>
+                        <h3 id="speed" style="visibility: hidden;">Default</h3>
+                        <button onclick="speedBoost()" id="speedBtn">Speed Boost (cost 100)</button>
+                    </li>
+            </ul>
+        </div>
+    </div>
+    <script src="clicker.js"></script>
+</body>
+</html>
